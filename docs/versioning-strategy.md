@@ -90,7 +90,7 @@ git tag -a v0.3.0 -m "Added export functionality"
 git push origin --tags
 ```
 
-## Version Milestones for Focus Architect
+## Version Milestones for Project Minerva
 
 ### Phase 1: Foundation (0.1 - 0.3)
 - `0.1.0-alpha`: Initial release ✅
@@ -120,7 +120,7 @@ Update version in `package.json`:
 
 ```json
 {
-  "name": "focus-architect",
+  "name": "project-minerva",
   "version": "0.1.0-alpha",
   ...
 }

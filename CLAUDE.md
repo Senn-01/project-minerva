@@ -1,7 +1,7 @@
-# Focus Architect - Claude Assistant Reference
+# Project Minerva - Claude Assistant Reference
 
 ## Project Overview
-Focus Architect is a productivity meta-layer tool that combines GTD principles, strategic visualization, and subtle gamification to help users manage projects and focus sessions.
+Project Minerva is a productivity meta-layer tool that combines GTD principles, strategic visualization, and subtle gamification to help users manage projects and focus sessions.
 
 ## Key Features
 1. **Strategic Map**: Visual scatter plot showing projects by cost/benefit

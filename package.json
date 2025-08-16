@@ -1,7 +1,7 @@
 {
-  "name": "250815-fullschuss",
-  "version": "1.0.0",
-  "description": "",
+  "name": "project-minerva",
+  "version": "0.1.0-alpha",
+  "description": "Productivity meta-layer tool combining GTD principles, strategic visualization, and subtle gamification",
   "main": "index.js",
   "directories": {
     "doc": "docs"
