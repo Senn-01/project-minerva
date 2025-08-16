@@ -75,7 +75,7 @@ This is an early-stage development version. Core functionality is implemented bu
 - Multiple language support
 
 ## 🛠️ Tech Stack
-- **Frontend**: React 18 + TypeScript
+- **Frontend**: React 19 + TypeScript
 - **Database**: SQLite with better-sqlite3
 - **Styling**: Tailwind CSS + Neo-brutalist theme
 - **Build**: Vite
