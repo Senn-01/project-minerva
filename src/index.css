@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-mono: 'Space Mono', monospace;
+  --font-family-display: 'Inter', sans-serif;
+  
+  --color-brutal-black: #000000;
+  --color-brutal-white: #FFFFFF;
+  --color-brutal-yellow: #FFD700;
+  --color-brutal-red: #FF0000;
+  --color-brutal-blue: #0000FF;
+  --color-brutal-green: #00FF00;
+  --color-brutal-pink: #FF69B4;
+  
+  --shadow-brutal-sm: 4px 4px 0 rgba(0, 0, 0, 0.9);
+  --shadow-brutal: 8px 8px 0 rgba(0, 0, 0, 0.9);
+  --shadow-brutal-lg: 12px 12px 0 rgba(0, 0, 0, 0.9);
+  
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-bounce-subtle: bounceSubtle 2s ease-in-out infinite;
+}
+
+@keyframes bounceSubtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --primary: 48 100% 50%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
+    --accent: 48 100% 50%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 48 100% 50%;
+    --radius: 0.5rem;
+  }
+  
+  body {
+    background-color: white;
+    color: black;
+    font-family: var(--font-family-display);
+  }
+}
+
+@layer components {
+  .brutal-border {
+    border-width: 4px;
+    border-color: black;
+  }
+  
+  .brutal-shadow {
+    box-shadow: var(--shadow-brutal);
+  }
+  
+  .brutal-shadow-hover:hover {
+    box-shadow: var(--shadow-brutal-lg);
+    transition-property: box-shadow;
+    transition-duration: 200ms;
+  }
+  
+  .brutal-button {
+    border-width: 4px;
+    border-color: black;
+    box-shadow: var(--shadow-brutal);
+    background-color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  
+  .brutal-button:hover {
+    box-shadow: var(--shadow-brutal-lg);
+  }
+  
+  .brutal-button:active {
+    transform: translate(4px, 4px);
+    box-shadow: var(--shadow-brutal-sm);
+  }
+  
+  .brutal-card {
+    border-width: 4px;
+    border-color: black;
+    box-shadow: var(--shadow-brutal);
+    background-color: white;
+    padding: 1.5rem;
+  }
+  
+  .brutal-input {
+    border-width: 4px;
+    border-color: black;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    font-family: var(--font-family-mono);
+  }
+  
+  .brutal-input:focus {
+    outline: none;
+    ring-width: 4px;
+    ring-color: var(--color-brutal-yellow);
+  }
+}
